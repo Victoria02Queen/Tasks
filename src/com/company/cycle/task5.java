@@ -7,20 +7,17 @@ public class task5 {
          */
         int number = 745;
         int sum = 0;
-        int x ;
 
         while (number > 0) {
-            x = number % 10; // получится от остатка от деления 5
-            sum = sum + x; //получаем 5 + 0
+           int x = number % 10; // получится от остатка от деления 5
 
             number = number / 10; // останется 74
+            sum = sum + x; //получаем 5 + 0
 
-           /* x = number % 10; // 74%10 останется 4
+            /* x = number % 10; // 74%10 останется 4
             sum = sum + x; //получаем 5 + 4 двух //последних чисел сумма
 
             number = number / 10; // останется 7 */
-
-
         }
         System.out.println(sum);
     }
