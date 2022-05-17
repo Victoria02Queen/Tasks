@@ -26,8 +26,18 @@ public class Triangle {
             System.out.println("- Разносторонний треугольник -");
         } else
             System.out.println("- Равнобедренный треугольник -");
+        
+        if (c * c == a * a + b * b){
+            System.out.println("- Прямоугольный -");
+        } else if (c * c < a * a + b * b) {
+            System.out.println("- Остроугольный -");
+        } else if (c * c > a * a + b * b) {
+            System.out.println("- Тупоугольный -");
+        }
 
         int p = ( a + b + c ) / 2;
+        System.out.println("Периметр треугольника = ");
+        System.out.print(p);
 
         double s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 
