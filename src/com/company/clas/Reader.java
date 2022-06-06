@@ -123,8 +123,12 @@ public class Reader {
             System.out.println("Книги не были взяты");
         }
     }
+
+    /**
+     * Метод предназначен для выбора инициалов из Имени и Отчества
+     * @return
+     */
     public String initials(){
-        /*Метод предназначен для выбора инициалов из Имени и Отчества*/
         return surname + " " + name.charAt(0) + ". " + patronymic.charAt(0) +".";
 
     }
